@@ -72,7 +72,7 @@ html_template = """<!DOCTYPE html>
       const files = __FILES_PLACEHOLDER__;
       stlite.mount(
         {
-          requirements: ["pandas", "numpy", "statsmodels", "scipy", "plotly", "openpyxl"],
+          requirements: ["pandas", "numpy", "statsmodels", "scipy", "plotly==5.24.1", "openpyxl"],
           entrypoint: "app.py",
           files: files,
         },
